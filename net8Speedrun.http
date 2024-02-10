@@ -1,0 +1,6 @@
+@net8Speedrun_HostAddress = http://localhost:5198
+
+GET {{net8Speedrun_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
