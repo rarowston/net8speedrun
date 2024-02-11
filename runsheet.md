@@ -7,4 +7,8 @@
     - Show Generated Code
     - LogPropertiesIgnore Attribute
 2. Keyed Services
+    - Service declaration with keys
+    - Constant key strings
+    - Dynamically choosing appropriate service
+    - Statically choosing appropriate service
 3. HTTP Resilience
