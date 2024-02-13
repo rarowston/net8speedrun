@@ -16,4 +16,4 @@
     - Show declaration of http client resilient and non-resilient
     - Show non-resilient API call
     - Compare to resilient API call
-    - Different types of notwork issue and default behaviour. 
+    - Different types of network issue and default behaviour. 
