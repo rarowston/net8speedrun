@@ -12,3 +12,8 @@
     - Dynamically choosing appropriate service
     - Statically choosing appropriate service
 3. HTTP Resilience
+    - Show Unreliable API
+    - Show declaration of http client resilient and non-resilient
+    - Show non-resilient API call
+    - Compare to resilient API call
+    - Different types of notwork issue and default behaviour. 
