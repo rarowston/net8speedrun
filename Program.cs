@@ -30,10 +30,7 @@ builder.Services.AddKeyedScoped<IFileService, StubFileService>(ServiceKeys.IFile
 
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient("resilient")
-    .AddStandardResilienceHandler(options =>
-    {
-        // Configure standard resilience options here
-    });
+    .AddStandardResilienceHandler();
 
 // You can customised options
 builder.Services.AddHttpClient("resilient-custom")
@@ -57,7 +54,6 @@ builder.Services.AddHttpClient("resilient-custom")
 //             Delay = TimeSpan.FromSeconds(2),
 //             BackoffType = DelayBackoffType.Exponential
 //         });
-
 //         builder.AddTimeout(TimeSpan.FromSeconds(10));
 //     });
 
