@@ -7,6 +7,7 @@
     - Show Generated Code
     - LogPropertiesIgnore Attribute
 2. Keyed Services
+    - File Services
     - Service declaration with keys
     - Constant key strings
     - Dynamically choosing appropriate service

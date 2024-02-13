@@ -35,7 +35,7 @@ namespace net8Speedrun.Controllers
         {
             if (string.IsNullOrWhiteSpace(newData))
             {
-                _logger.LogWarning("NetSetting string via API to {newData}", newData);
+                _logger.LogWarning("Setting string via API to {newData}", newData);
                 return false;
             }
             else

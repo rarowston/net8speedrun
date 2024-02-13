@@ -38,7 +38,7 @@ public class FileInteractionController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> SubmitFile()
+    public async Task<IActionResult> SubmitFileAsync()
     {
         IFormFileCollection files = HttpContext.Request.Form.Files;
         IFormFile? file = files.FirstOrDefault();
@@ -103,7 +103,7 @@ public class FileInteractionController : ControllerBase
     }
 
     /// <summary>
-    /// This forces the system to use the file version of the service by requesting hte object from keyed services. 
+    /// This forces the system to use the file version of the service by requesting the object from keyed services. 
     /// </summary>
     [HttpPost("ForceStub")]
     public async Task<IActionResult> SubmitFileStub([FromKeyedServices(ServiceKeys.IFileServiceKeys.STUB_SERVICE_KEY)] IFileService fileService)

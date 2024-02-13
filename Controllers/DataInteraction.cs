@@ -20,18 +20,21 @@ namespace net8Speedrun.Controllers
         [HttpGet("GetInt")]
         public int GetInt()
         {
+            LogRequest(_logger);
             return Number;
         }
 
         [HttpGet("GetString")]
         public string GetString()
         {
+            LogRequest(_logger);
             return Data;
         }
 
         [HttpPost("SetString")]
         public bool SetString([FromBody] string newData)
         {
+            LogRequest(_logger);
             if (string.IsNullOrWhiteSpace(newData))
             {
                 return false;
